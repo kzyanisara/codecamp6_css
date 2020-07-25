@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        table, th, td {
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+    </style>
+</head>
+<body>
+
+<h2>1.1 CSS syntax ประกอบด้วยอะไรบ้าง </h2>
+
+
+<table style="width:100%">
+    <tr>
+        <td>selector {property: value}</td>
+    </tr>
+
+    <tr>
+        <td>1.Selector คือ ส่วน HTML tag ที่เราต้องการจะให้แสดงผล เช่น tag table < tabel > ก็จะแสดงผลในส่วนของตาราง
+        </td>
+    </tr>
+
+    <tr>
+        <td> 2.Property คือ ส่วนของคุณสมบัติที่เราต้องการให้แสดง เช่น สีตัวอักษร , ชนิดตัวอักษร , ขนาดตัวอักษร เช่น
+            color: pink; color คือ property ถ้ามี property มากกว่า 1 เราจะใช้ ; คั่นระหว่าง property p { text - align :
+            center ; color : red }
+        </td>
+    </tr>
+
+    <tr>
+        <td>3.Value คือ ค่าที่เราต้องการให้แสดง เช่น ตัวอักษรสีแดง , ตัวอักษรแบบ tahoma , ตัวอักษรขนาด 12 pt เช่น color:
+            pink; pink คือ value
+        </td>
+    </tr>
+</table>
+
+<h2>1.2 การเขียน CSS มีกี่แบบอะไรบ้าง</h2>
+
+<table style="width:100%">
+    <tr>
+        <td>1.Inline CSS: เขียนใน tag html การเขียน CSS โดยการฝังลงไปใน line บรรทัดของ TAG HTML โดยการใช้ Attribute
+            style แล้วตามด้วย value
+            เช่น < div style="color:red; font-size: 12px;">
+        </td>
+    </tr>
+
+    <tr>
+        <td>2.external CSS: เขียนแยกไฟล์โดย link เข้ากับไฟล์ CSS จากภายนอก</td>
+    </tr>
+    <tr>
+        <td>3.Internal CSS: เขียน < style> ไว้ภายในส่วนของ < head>ของหน้า HTML</td>
+    </tr>
+</table>
+
+<h2>1.3 selector มีกี่แบบอะไรบ้าง</h2>
+
+
+<table style="width:100%">
+    <tr>
+        <td>1.ID: เราจะเขียน ID เมื่อเราต้องการระบุถึงส่วนสำคัญของหน้าที่ในหน้าหนึ่งๆจะมีแค่หนึ่งเดียวเท่านั้น เช่น
+            ส่วนหัวด้านบนของหน้า
+            เขียนได้โดยการ ตั้งชื่อ Selector ไว้หลังเครื่องหมาย ( # ) เช่น #header {color: pink;}
+            เรียกใช้ ID Selector ได้โดยการใช้แอททริบิวท์ id แล้วตามด้วยชื่อ id เช่น < div id="header">
+        </td>
+    </tr>
+    <tr>
+        <td>2.Class: เขียนได้โดยการ ตั้งชื่อ Selector ไว้หลังเครื่องหมายจุด หรือ Dot ( . ) เช่น .myclass {color: pink;}
+            เรียกใช้ Class Selector ได้โดยการใช้แอททริบิวท์ class แล้วตามด้วยชื่อ Class เช่น < div class="myclass">
+        </td>
+    </tr>
+    <tr>
+        <td>3.Pseudo element: selector การจัดรูปแบบการแสดงผลโดยขึ้นกับสถานะ หรือเงื่อนไข
+            selector:pseudo-element {property: value},
+            selector.class:pseudo-element {property: value} เช่น
+            p:first-letter {color:#ff0000;font-size:xx-large}
+            < p>Enjoyday< /p> ผลออกมา ตัว E อักษรตัวแรกของ tag p จะเป็นสีแดงขนาดใหญ่
+        </td>
+    </tr>
+    <tr>
+        <td>4.Pseudo class: (class แฝง) รูปแบบการแสดงผลโดยขึ้นกับสถานะ หรือเงื่อนไข เช่น :hover link
+            เมื่อถูกคลิกจะเปลี่ยนสี เป็นต้น
+        </td>
+    </tr>
+
+    <tr>
+        <td> 5.Combinators: การกำหนด ว่าจะกำหนดค่าให้กับ element ไหนบ้าง มีค่าเป็นแบบไหน โดยการใช้เครื่องหมาย descendant
+            <br>
+            selector (space) ทุกตัว
+            child selector (>) ไม่ที่ผสม
+            adjacent sibling selector (+) หนึ่งตัว ถัดลงไป
+            general sibling selector (~) ทุกตัวถัดลงไป
+        </td>
+    </tr>
+    <tr>
+        <td>6.attribute selectors: ตัวเลือกแอททริบิวเป็นตัวเลือกชนิดพิเศษที่จะจับคู่ elements based ตามตัวตนของ
+            attribute และ attribute value
+            ไวยากรณ์ทั่วไปจะประกอบด้วยเครื่องหมายวงเล็บเหลี่ยม ([]) ที่มีชื่อ attribute ตามด้วยเงื่อนไขเพิ่มเติมเพื่อจับคู่กับ attribute value
+        <br> [attr] ตัวเลือกนี้จะเลือกองค์ประกอบทั้งหมดด้วยแอตทริบิวต์ attr ไม่ว่าจะเป็นค่าใด <br>
+            [attr=val] selector นี้จะ select all element ทั้งหมดที่มี attribute attrแต่ถ้าค่าของมันคือ val<br>
+            [attr~=val] selector นี้จะ select all element ทั้งหมด ที่มี attribute attr แต่ถ้า val เป็นรายการคำที่คั่นด้วยช่องว่างที่มีอยู่ในค่าของ attr
+        </td>
+    </tr>
+</table>
+
+
+<h2>1.4 combinator มีกี่แบบอะไรบ้าง </h2>
+
+<table style="width:100%">
+
+    <tr>
+        <td> 1.Comma Combinator "A,B"</td>
+    </tr>
+
+    <tr>
+        <td>2.Descendant selector (space) : a b</td>
+    </tr>
+    <tr>
+        <td>3.Child selector(>) : a>b</td>
+    </tr>
+    <tr>
+        <td>4.Adjacent sibling selector : a+b</td>
+    </tr>
+    <tr>
+        <td>5.General sibling selector(~) : a~b</td>
+    </tr>
+    <tr>
+        <td>6.Universal Selector(*) : a*</td>
+    </tr>
+</table>
+
+</body>
+</html>
