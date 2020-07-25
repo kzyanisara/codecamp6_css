@@ -1,0 +1,144 @@
+<html>
+<head>
+    <title>Registration Form</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        body {
+            background: #f3f2f2;
+        }
+
+        table {
+            color: black;
+            font-size: 11pt;
+            font-style: normal;
+            font-weight: bold;
+            background-color: #ffffff;
+            border-collapse: collapse;
+            border: 0px solid black;
+        }
+
+        table.inner {
+            border: 0px
+        }
+
+        .setup {
+            background: #f3f2f2;
+        }
+
+        #template, #logo,#form, #review, #score, #max {
+            width: 200px;
+        }
+    </style>
+
+</head>
+
+<body>
+
+
+<table align="center" cellpadding="10">
+
+    <tr>
+        <td>Name*:</td>
+        <td><input type="text" name="First_Name" maxlength="30"/><i class="fa fa-question-circle"></i>
+        </td>
+    </tr>
+
+    <tr>
+        <td>Tab Text*:</td>
+        <td><input type="text" name="Tab_Text" maxlength="100"/><i class="fa fa-question-circle"></i></td>
+    </tr>
+
+
+    <tr>
+        <td>URL*:</td>
+        <td colspan="2">http://www.wizehive.com/webform/ <input type="text" id="url" name="url"></td>
+    </tr>
+
+    <tr class="setup">
+        <td colspan="3">FORM SETUP</td>
+    </tr>
+    <tr>
+        <td>Form:</td>
+        <td>
+            <select name="form" id="form">
+                <option value="">&nbsp;</option>
+            </select>
+            <input type="button" name="edit" value="edit">
+        </td>
+    </tr>
+
+    <tr>
+        <td>Logo:</td>
+        <td>
+
+            <input name="logo" id="logo" placeholder="no logo uploads" style="border: none"/>
+
+            <input type="button" name="Upload Logo" value="Upload Logo">
+        </td>
+    </tr>
+
+    <tr>
+        <td>Template Text:</td>
+        <td>
+            <select name="form" id="template">
+                <option value="english">English</option>
+                <option value="thai">Thai</option>
+            </select>
+            <input type="button" name="edit" value="edit">
+        </td>
+    </tr>
+
+    <tr>
+        <td>Review Form:</td>
+        <td>
+            <select name="review" id="review">
+                <option value="Default">Default</option>
+            </select>
+        </td>
+    </tr>
+
+    <tr>
+        <td>Review Score:</td>
+        <td>
+            <select name="form" id="score">
+                <option value="rating">Rating</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+            </select>
+            <input type="button" name="Reload Fields" value="Reload Fields">
+        </td>
+    </tr>
+
+    <tr>
+        <td>Scoring Type:</td>
+        <td>
+            <select name="scoring">
+                <option value="average">Average</option>
+            </select>
+        </td>
+    </tr>
+
+    <tr>
+        <td>Max Score:</td>
+        <td>
+            <input name="score" id="max" placeholder="4.00"/>
+        </td>
+    </tr>
+
+
+    <tr>
+        <td colspan="2" align="center">
+            <input type="submit" value="Submit">
+            <input type="reset" value="Reset">
+        </td>
+    </tr>
+</table>
+
+</form>
+
+</body>
+</html>
