@@ -1,0 +1,279 @@
+#color-fromto {
+    animation-name: colorfrom;
+    animation: colorfrom 5s infinite;
+}
+
+@keyframes colorfrom {
+    from {
+        color: pink;
+    }
+
+    to {
+        color: dodgerblue;
+    }
+}
+
+#color-percent {
+    animation-name: colorpercent;
+    animation: colorpercent 5s infinite;
+}
+
+@keyframes colorpercent {
+    0% {
+        color: mediumpurple;
+    }
+    20% {
+        color: lightblue;
+    }
+    40% {
+        color: mediumseagreen;
+    }
+    60% {
+        color: yellow;
+    }
+    80% {
+        color: coral;
+    }
+    90% {
+        color: deeppink;
+    }
+    100% {
+        color: red;
+    }
+}
+
+#width-fromto {
+    animation-name: ani-width;
+    animation: ani-width 5s infinite;
+    padding: 20px;
+}
+
+@keyframes ani-width {
+    from {
+        width: 0%;
+        background-color: pink;
+    }
+    to {
+        width: 100%;
+        background-color: cornflowerblue;
+    }
+}
+
+#width-percent {
+    animation-name: width-percent;
+    animation: width-percent 5s infinite;
+    padding: 1em;
+}
+
+@keyframes width-percent {
+    0% {
+        width: 0%;
+        Background-color: purple;
+    }
+    20% {
+        width: 20%;
+        Background-color: lightblue;
+    }
+    40% {
+        width: 40%;
+        Background-color: blue;
+    }
+    60% {
+        width: 60%;
+        Background-color: green;
+    }
+    80% {
+        width: 80%;
+        Background-color: yellow;
+    }
+    100% {
+        width: 100%;
+        Background-color: orange;
+    }
+}
+
+#border-fromto {
+    animation-name: border-fromto;
+    animation: border-fromto 10s infinite;
+    padding: 1em;
+}
+
+@keyframes border-fromto {
+    from {
+        border: pink 5px solid;
+    }
+    to {
+        border: salmon 5px dotted;
+    }
+}
+
+#border-percent {
+    animation-name: border-percent;
+    animation: border-percent 10s infinite;
+    padding: 1em;
+}
+
+@keyframes border-percent {
+    0% {
+        border: pink 2px solid;
+    }
+    10% {
+        border: lightblue 4px dotted;
+    }
+    40% {
+        border: salmon 2px dashed;
+    }
+    60% {
+        border: forestgreen 4px double;
+    }
+    70% {
+        border: yellowgreen 2px ridge;
+    }
+    80% {
+        border: darkorange 4px groove;
+    }
+    100% {
+        border: #919191 4px solid;
+    }
+}
+
+.ani-bg{
+    display:flex;
+}
+
+
+#animation-bg-fromto {
+    animation-name: bg-fromto;
+    animation: bg-fromto 10s infinite;
+    width: 50%;
+}
+
+#animation-bg {
+    animation-name: bg;
+    animation: bg 5s infinite;
+    padding: 30px;
+    width: 50%;
+}
+
+@keyframes bg-fromto {
+    from {
+        background-color: pink;
+    }
+    to {
+        background-color: cornflowerblue;
+    }
+}
+
+@keyframes bg {
+    from {
+        background-color: cornflowerblue;
+    }
+    to {
+        background-color: pink;
+    }
+}
+
+.animation-bg{
+    display: flex;
+}
+
+
+#animation-bg-percent {
+    animation-name: bg-percent;
+    animation: bg-percent 10s infinite;
+    padding: 1em;
+    width: 50%;
+
+}
+
+#animation-bg-p {
+    animation-name: bg-p;
+    animation: bg-p 5s infinite;
+    padding: 1em;
+    width: 50%;
+}
+
+@keyframes bg-percent {
+    0% {
+        background-color: palegoldenrod;
+    }
+
+    20% {
+        background-color: rgb(230, 54, 54);
+        width: 100%;
+
+    }
+
+    40% {
+        background-color: pink;
+    }
+
+    60% {
+        background-color: salmon;
+    }
+
+    100% {
+        background-color: hotpink;
+    }
+}
+
+@keyframes bg-p {
+    0% {
+        background-color: dodgerblue;
+    }
+
+    100% {
+        background-color: springgreen;
+        width: 90%;
+
+    }
+}
+
+
+#show-hide-fromto {
+    animation-name: show-hide;
+    width: 100px;
+    height: 100px;
+    animation: show-hide 1s infinite;
+    background-color: pink;
+    visibility: visible;
+    display:flex; margin: auto; justify-content: center;
+}
+
+@keyframes show-hide {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+#show-hide-percent{
+    animation-name: show-hide-2;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-delay: 1s;
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    background-color: slateblue;
+    display:flex; margin: auto; justify-content: center;
+}
+
+@keyframes show-hide-2 {
+    0% {
+        opacity: 1;
+        animation-delay: 1s;
+    }
+    50% {
+        opacity: 0;
+        animation-delay: 1s;
+    }
+    100% {
+        opacity: 1;
+        animation-delay: 1s;
+    }
+}
+
+
