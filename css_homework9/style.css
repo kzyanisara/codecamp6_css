@@ -1,0 +1,136 @@
+#animation-1 {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background-color: lightpink;
+    position: relative;
+    animation: direction-normal 5s infinite;
+    animation-direction: normal;
+    animation-delay: 1s;
+}
+
+@keyframes direction-normal {
+    0% {
+        background: lightpink;
+        left: 0px;
+    }
+    25% {
+        background: pink;
+        left: 80%;
+    }
+    50% {
+        background: hotpink;
+        left: 40%;
+    }
+    75% {
+        background: deeppink;
+        left: 80%;
+    }
+    100% {
+        background: lightcoral;
+        left: 0%;
+    }
+}
+
+#animation-2 {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background-color: lightblue;
+    position: relative;
+    animation: direction-reverse 5s infinite;
+    animation-direction: reverse;
+    animation-delay: 1s;
+}
+
+@keyframes direction-reverse {
+    0% {
+        background: cornflowerblue;
+        left: 0px;
+    }
+    25% {
+        background: dodgerblue;
+        left: 80%;
+    }
+    50% {
+        background: deepskyblue;
+        left: 40%;
+    }
+    75% {
+        background: royalblue;
+        left: 80%;
+    }
+    100% {
+        background: steelblue;
+        left: 0%;
+    }
+}
+
+
+#animation-3 {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background-color: lightgreen;
+    position: relative;
+    animation: direction-alternate 5s infinite;
+    animation-direction: alternate;
+    animation-delay: 1s;
+}
+
+@keyframes direction-alternate {
+    0% {
+        background: lightgreen;
+        left: 0px;
+    }
+    25% {
+        background: limegreen;
+        left: 80%;
+    }
+    50% {
+        background: yellowgreen;
+        left: 40%;
+    }
+    75% {
+        background: forestgreen;
+        left: 80%;
+    }
+    100% {
+        background: darkgreen;
+        left: 0%;
+    }
+}
+
+#animation-4 {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background-color: lightcoral;
+    position: relative;
+    animation: direction-alternate-re 5s infinite;
+    animation-direction: alternate-reverse;
+    animation-delay: 1s;
+}
+
+@keyframes direction-alternate-re {
+    0% {
+        background: lightcoral;
+        left: 0px;
+    }
+    25% {
+        background: coral;
+        left: 80%;
+    }
+    50% {
+        background: orange;
+        left: 40%;
+    }
+    75% {
+        background: orangered;
+        left: 80%;
+    }
+    100% {
+        background: red;
+        left: 0%;
+    }
+}
